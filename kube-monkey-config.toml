@@ -1,0 +1,14 @@
+[kubemonkey]
+dry_run = false
+run_hour = 8
+start_hour = 10
+end_hour = 16
+blacklisted_namespaces = ["kube-system"]
+whitelisted_namespaces = ["corpora"]
+time_zone = "Europe/Stockholm"
+
+[debug]
+enabled = true
+schedule_immediate_kill = true
+
+
