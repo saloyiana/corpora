@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
   name: kube-monkey
   labels:
-    app: kubemonkey
+    app: kube-monkey
 spec:
   selector:
-    matchLabe;s:
+    matchLabels:
       app: kube-monkey
   replicas: 1
   template:
@@ -14,7 +14,7 @@ spec:
       labels:
         app: kube-monkey
     spec:
-      serviceAccountName: kube-monkey-sa
+      serviceAccountName: default
       containers:
       - name: kube-monkey
         command:
